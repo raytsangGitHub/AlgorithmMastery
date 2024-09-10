@@ -19,7 +19,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{1B2B
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{3C1A6C87-5321-41EC-82F8-535E3E6AE5FC}"
 	ProjectSection(SolutionItems) = preProject
-		.github\workflows\CI.yaml = .github\workflows\CI.yaml
+		.github\workflows\AlgoMastryCI.yaml = .github\workflows\AlgoMastryCI.yaml
 	EndProjectSection
 EndProject
 Global
