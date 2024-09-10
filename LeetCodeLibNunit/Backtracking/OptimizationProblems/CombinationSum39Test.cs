@@ -5,13 +5,13 @@ namespace LeetCodeLibNunit.Backtracking.OptimizationProblems
 {
     public class CombinationSum39Test : TestBase
     {
-        private IBacktrackingOperation<IList<IList<int>>>? _CombinationSum39;
+        private IBacktrackingOperation<IList<IList<int>>>? _combinationSum39;
 
         [SetUp]
         public void TestSetup()
         {
             //get the service from ServiceProvider
-            _CombinationSum39 = ServiceProvider.GetService<IBacktrackingOperation<IList<IList<int>>>>();
+            _combinationSum39 = ServiceProvider.GetService<IBacktrackingOperation<IList<IList<int>>>>();
         }
 
         //validation testing
@@ -23,7 +23,7 @@ namespace LeetCodeLibNunit.Backtracking.OptimizationProblems
             int[] cand = { 8, 2, 3, 6, 7 };
             int target = 7;
             int expectedCount = 2;
-            var res = _CombinationSum39?.Execute(cand, target);
+            var res = _combinationSum39?.Execute(cand, target);
             Assert.That(res.Count, Is.EqualTo(expectedCount));
         }
 

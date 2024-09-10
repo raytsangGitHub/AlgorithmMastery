@@ -10,6 +10,7 @@
     <Folder Include="Backtracking\EnumerationProblems\" />
     <Folder Include="Greedy\" />
     <Folder Include="DynamicProgramming\" />
+    <Folder Include="TwoPointers\" />
   </ItemGroup>
 
   <ItemGroup>

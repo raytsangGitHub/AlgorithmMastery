@@ -25,6 +25,7 @@ namespace LeetCode150Lib.Backtracking.DecisionProblems
                 board.Add(new()); //create a list of stringbuilder objects
                 board[i].Append('.', Q); //append '.' Q times. string = "...."
             }
+
             //call back method, start at row = 0.
             backtrack(0, [], [], []);
 
