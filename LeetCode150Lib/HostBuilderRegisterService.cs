@@ -21,7 +21,8 @@ namespace LeetCode150Lib
                     typeof(IBacktrackingOperation<IList<string>>),
                     typeof(IBacktrackingOperation<IList<IList<int>>>),
                     typeof(IBacktrackingOperation<IList<IList<string>>>),
-                    typeof(ITwoPointerOperation<bool>)
+                    typeof(ITwoPointerOperation<bool>),
+                    typeof(ITwoPointerOperation<int[]>)
                 };
 
                 foreach (var interfaceType in interfaceTypes)

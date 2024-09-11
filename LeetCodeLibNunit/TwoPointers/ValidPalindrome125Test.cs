@@ -5,7 +5,7 @@ namespace LeetCodeLibNunit.TwoPointers
 {
     public class ValidPalindrome125Test : TestBase
     {
-        private ITwoPointerOperation<bool> _validPalindrome;
+        private ITwoPointerOperation<bool>? _validPalindrome;
 
         [SetUp]
         public void TestSetup()

@@ -1,5 +1,3 @@
-using System.Text.RegularExpressions;
-
 namespace LeetCode150Lib.TwoPointers
 {
     /// <summary>
@@ -15,25 +13,44 @@ namespace LeetCode150Lib.TwoPointers
         public bool Execute(params object[] parameters)
         {
             if (parameters[0] == null) return true;
-            if (parameters[0] != null)
+            if (parameters[0] is string input)
             {
-                var newStr = parameters[0]?.ToString().ToLower();
-                var pattern = @"[^a-zA-Z0-9]";
-                var result = Regex.Replace(newStr, pattern, string.Empty).ToArray();
-                int endPointer = result.Length - 1;
-                int startPoint = 0;
-                while (startPoint < endPointer)
+                var Str = new string(input
+                    .Where(c => char.IsLetterOrDigit(c))
+                    .Select(c => char.ToLower(c))
+                    .ToArray()
+                 );
+                int len = Str.Length;
+
+                for (int i = 0; i < len / 2; i++)
                 {
-                    if (!result[startPoint].Equals(result[endPointer]))
+                    //two pointers
+                    if (Str[i] != Str[len - i - 1])
                     {
                         return false;
                     }
-                    startPoint++;
-                    endPointer--;
                 }
+                return true;
+
+                //var newStr = parameters[0]?.ToString().ToLower();
+                //var pattern = @"[^a-zA-Z0-9]";
+                //var result = Regex.Replace(newStr, pattern, string.Empty).ToArray();
+                //int endPointer = result.Length - 1;
+                //int startPoint = 0;
+                //while (startPoint < endPointer)
+                //{
+                //    if (!result[startPoint].Equals(result[endPointer]))
+                //    {
+                //        return false;
+                //    }
+                //    startPoint++;
+                //    endPointer--;
+                //}
             }
 
-            return true;
+            return false;
         }
+
+        // the time and space are both O(N)
     }
 }
