@@ -1,4 +1,5 @@
 using LeetCode150Lib.Backtracking.OptimizationProblems;
+using LeetCode150Lib.TwoPointers;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System.Reflection;
@@ -19,7 +20,8 @@ namespace LeetCode150Lib
                 {
                     typeof(IBacktrackingOperation<IList<string>>),
                     typeof(IBacktrackingOperation<IList<IList<int>>>),
-                    typeof(IBacktrackingOperation<IList<IList<string>>>)
+                    typeof(IBacktrackingOperation<IList<IList<string>>>),
+                    typeof(ITwoPointerOperation<bool>)
                 };
 
                 foreach (var interfaceType in interfaceTypes)

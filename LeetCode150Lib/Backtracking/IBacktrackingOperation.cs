@@ -7,7 +7,5 @@
     public interface IBacktrackingOperation<TResult>
     {
         public TResult Execute(params object[] parameters);
-
-        // public IList<IList<int>> CombinationSum(int[] candidates, int target);
     }
 }
