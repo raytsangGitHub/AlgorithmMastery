@@ -7,9 +7,21 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Backtracking\EnumerationProblems\" />
+    <Folder Include="DynamicProgramming\Multi_D\" />
     <Folder Include="Greedy\" />
-    <Folder Include="DynamicProgramming\" />
+    <Folder Include="BinaryTreeGeneral\" />
+    <Folder Include="BinarySearchTree\" />
+    <Folder Include="GraphGeneral\" />
+    <Folder Include="BinarySearch\" />
+    <Folder Include="Heap\" />
+    <Folder Include="BitManipulation\" />
+    <Folder Include="Math\" />
+    <Folder Include="DividAndConquer\" />
+    <Folder Include="SharedPatterns\OverLappingIntervals\InsertInterval\" />
+    <Folder Include="SharedPatterns\OverLappingIntervals\MergingInterval\" />
+    <Folder Include="SharedPatterns\OverLappingIntervals\IntervalIntersection\" />
+    <Folder Include="Recursion\" />
+    <Folder Include="Trie\" />
   </ItemGroup>
 
   <ItemGroup>

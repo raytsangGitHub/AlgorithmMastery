@@ -1,4 +1,4 @@
-namespace LeetCode150Lib.TwoPointers
+namespace LeetCode150Lib.SharedPatterns.TwoPointers
 {
     public class TwoSumII167 : ITwoPointerOperation<int[]>
     {
@@ -9,10 +9,13 @@ namespace LeetCode150Lib.TwoPointers
         public int[] Execute(params object[] parameters)
         {
             int[] output = new int[2];
-            var input = parameters[0];
+            //cast
+            var input = (int[])parameters[0];
+            Array.Sort(input); //sort the array in ascending order
+
             //require cast else this line won't work: if (inputStr[left] + inputStr[right] == k)
             var k = (int)parameters[1];
-            if (input is int[] inputStr)
+            if (input is int[] inputStr)  //verify input is int[], if true assign to inputSTR
             {
                 int left = 0;
                 int right = parameters.Length - 1;
@@ -23,7 +26,7 @@ namespace LeetCode150Lib.TwoPointers
                     {
                         output[0] = left + 1;
                         output[1] = right + 1;
-                        break;
+                        return output;
                     }
                     else if (inputStr[left] + inputStr[right] > k) //k < the sum
                     {

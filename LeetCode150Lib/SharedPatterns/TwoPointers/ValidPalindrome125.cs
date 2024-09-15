@@ -1,4 +1,4 @@
-namespace LeetCode150Lib.TwoPointers
+namespace LeetCode150Lib.SharedPatterns.TwoPointers
 {
     /// <summary>
     /// Definition: A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.
@@ -13,6 +13,7 @@ namespace LeetCode150Lib.TwoPointers
         public bool Execute(params object[] parameters)
         {
             if (parameters[0] == null) return true;
+            //check parameters[0] is string type
             if (parameters[0] is string input)
             {
                 var Str = new string(input

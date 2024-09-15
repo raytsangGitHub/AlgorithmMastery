@@ -1,4 +1,4 @@
-﻿namespace LeetCode150Lib.TwoPointers
+﻿namespace LeetCode150Lib.SharedPatterns.TwoPointers
 {
     /// <summary>
     /// An interface designed for all Two Pointer problems, implemented using generics and params to add flexibility for future methods that may require more than one parameter.

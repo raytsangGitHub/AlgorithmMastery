@@ -1,4 +1,4 @@
-using LeetCode150Lib.TwoPointers;
+using LeetCode150Lib.SharedPatterns.TwoPointers;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace LeetCodeLibNunit.TwoPointers
@@ -32,6 +32,13 @@ namespace LeetCodeLibNunit.TwoPointers
         public void EdgeTest(int[] input, int k, int[] expected)
         {
             var result = _twoPointerOperation.Execute(input, k);
+            Assert.AreEqual(expected, result);
+        }
+
+        [TestCase(new int[] { 2, 15, 7, 11 }, 9, new int[] { 1, 2 })]
+        public void MethodSortInputAscending(int[] input, int k, int[] expected)
+        {
+            var result = _twoPointerOperation?.Execute(input, k);
             Assert.AreEqual(expected, result);
         }
     }

@@ -1,5 +1,5 @@
 using LeetCode150Lib.Backtracking.OptimizationProblems;
-using LeetCode150Lib.TwoPointers;
+using LeetCode150Lib.SharedPatterns.TwoPointers;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System.Reflection;
@@ -28,7 +28,7 @@ namespace LeetCode150Lib
                 foreach (var interfaceType in interfaceTypes)
                 {
                     if (assembly != null)
-                    {
+                    {  //examing type with reflection
                         var implementations = assembly.GetTypes()
                             .Where(type => interfaceType.IsAssignableFrom(type) && !type.IsInterface && !type.IsAbstract);
 

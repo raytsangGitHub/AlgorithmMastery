@@ -1,4 +1,4 @@
-using LeetCode150Lib.TwoPointers;
+using LeetCode150Lib.SharedPatterns.TwoPointers;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace LeetCodeLibNunit.TwoPointers

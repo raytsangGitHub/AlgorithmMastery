@@ -1,7 +1,7 @@
 using LeetCode150Lib.Backtracking.OptimizationProblems;
 using System.Text;
 
-namespace LeetCode150Lib.Backtracking.DecisionProblems
+namespace LeetCode150Lib.Backtracking.EnumerationProblems
 {
     /// <summary>
     ///
@@ -68,7 +68,7 @@ namespace LeetCode150Lib.Backtracking.DecisionProblems
                 }
             }
             // validate method
-            bool is_valid_state(int row, int col, HashSet<int> cols, HashSet<int> posDiag, HashSet<int> negDiag) => (cols.Contains(col) || posDiag.Contains(row + col) || negDiag.Contains(row - col));
+            bool is_valid_state(int row, int col, HashSet<int> cols, HashSet<int> posDiag, HashSet<int> negDiag) => cols.Contains(col) || posDiag.Contains(row + col) || negDiag.Contains(row - col);
             //place queen
             void PlaceQueen(int row, int col, HashSet<int> cols, HashSet<int> posDiag, HashSet<int> negDiag, IList<StringBuilder> board)
             {

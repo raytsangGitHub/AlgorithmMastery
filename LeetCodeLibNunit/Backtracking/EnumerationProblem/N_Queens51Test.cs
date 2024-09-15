@@ -1,7 +1,7 @@
 using LeetCode150Lib.Backtracking.OptimizationProblems;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace LeetCodeLibNunit.Backtracking.DecisionProblem
+namespace LeetCodeLibNunit.Backtracking.EnumerationProblem
 {
     public class N_Queens51Test : TestBase
     {

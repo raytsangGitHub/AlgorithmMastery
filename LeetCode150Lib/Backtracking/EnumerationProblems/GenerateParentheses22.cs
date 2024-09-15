@@ -1,9 +1,10 @@
+using LeetCode150Lib.Backtracking.OptimizationProblems;
 using System.Text;
 
-namespace LeetCode150Lib.Backtracking.OptimizationProblems
+namespace LeetCode150Lib.Backtracking.EnumerationProblems
 {
     /// <summary>
-    /// Optimization Problem:  Find all possible feasible solutions to the problems of this type.
+    /// Enumeration Problem:  Find all possible feasible solutions to the problems of this type.
     /// </summary>
     public class GenerateParentheses22 : IBacktrackingOperation<IList<string>>
     {

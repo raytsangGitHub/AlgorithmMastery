@@ -1,4 +1,6 @@
-namespace LeetCode150Lib.Backtracking.OptimizationProblems
+using LeetCode150Lib.Backtracking.OptimizationProblems;
+
+namespace LeetCode150Lib.Backtracking.EnumerationProblems
 {
     /// <summary>
     /// 1. Given an array of distinct integers candidates and a target integer target, return a list of all unique combinations of candidates where the chosen numbers sum to target. You may return the combinations in any order.
