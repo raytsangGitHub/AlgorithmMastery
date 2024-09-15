@@ -1,17 +1,17 @@
-using LeetCode150Lib.Backtracking.OptimizationProblems;
+using LeetCode150Lib;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace LeetCodeLibNunit.Backtracking.OptimizationProblems
+namespace LeetCodeLibNunit.Backtracking.EnumerationProblem
 {
     public class GenerateParentheses22Test : TestBase
     {
-        private IBacktrackingOperation<IList<string>>? _generateParentheses22;
+        private IAlgoMasteryOperation<IList<string>>? _generateParentheses22;
 
         [SetUp]
         public void TestSetup()
         {
             // get the service from IServiceProvider
-            _generateParentheses22 = ServiceProvider.GetService<IBacktrackingOperation<IList<string>>>();
+            _generateParentheses22 = ServiceProvider.GetService<IAlgoMasteryOperation<IList<string>>>();
         }
 
         // *** Test Data

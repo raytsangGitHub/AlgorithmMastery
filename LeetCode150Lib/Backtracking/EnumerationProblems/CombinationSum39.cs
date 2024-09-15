@@ -1,5 +1,3 @@
-using LeetCode150Lib.Backtracking.OptimizationProblems;
-
 namespace LeetCode150Lib.Backtracking.EnumerationProblems
 {
     /// <summary>
@@ -7,7 +5,7 @@ namespace LeetCode150Lib.Backtracking.EnumerationProblems
     /// 2. The same number may be chosen from candidates an unlimited number of times. Two combinations are unique if the frequency of at least one of the chosen numbers is different.
     /// 3. The test cases are generated such that the number of unique combinations that sum up to target is less than 150 combinations for the given input.
     /// </summary>
-    public class CombinationSum39 : IBacktrackingOperation<IList<IList<int>>>
+    public class CombinationSum39 : IAlgoMasteryOperation<IList<IList<int>>>
     {
         private static readonly IList<IList<int>>? _res = new List<IList<int>>();
         private static List<int>? _isValid;

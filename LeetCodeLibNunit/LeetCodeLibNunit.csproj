@@ -27,6 +27,7 @@
 
   <ItemGroup>
     <Folder Include="Backtracking\DecisionProblem\" />
+    <Folder Include="Backtracking\OptimizationProblems\" />
   </ItemGroup>
 
 </Project>

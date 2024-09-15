@@ -1,4 +1,4 @@
-using LeetCode150Lib.Backtracking.OptimizationProblems;
+using LeetCode150Lib;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace LeetCodeLibNunit.Backtracking.EnumerationProblem
@@ -6,13 +6,13 @@ namespace LeetCodeLibNunit.Backtracking.EnumerationProblem
     public class N_Queens51Test : TestBase
     {
         //aggregation
-        private IBacktrackingOperation<IList<IList<string>>>? _nQueens51;
+        private IAlgoMasteryOperation<IList<IList<string>>>? _nQueens51;
 
         [SetUp]
         public void TestSetup()
         {
             //Property DI:  get the service from IServiceProvider
-            _nQueens51 = ServiceProvider.GetService<IBacktrackingOperation<IList<IList<string>>>>() ?? throw new InvalidOperationException("Service not found.");
+            _nQueens51 = ServiceProvider.GetService<IAlgoMasteryOperation<IList<IList<string>>>>() ?? throw new InvalidOperationException("Service not found.");
         }
 
         // *** Test Data

@@ -1,4 +1,3 @@
-using LeetCode150Lib.Backtracking.OptimizationProblems;
 using System.Text;
 
 namespace LeetCode150Lib.Backtracking.EnumerationProblems
@@ -6,7 +5,7 @@ namespace LeetCode150Lib.Backtracking.EnumerationProblems
     /// <summary>
     /// Enumeration Problem:  Find all possible feasible solutions to the problems of this type.
     /// </summary>
-    public class GenerateParentheses22 : IBacktrackingOperation<IList<string>>
+    public class GenerateParentheses22 : IAlgoMasteryOperation<IList<string>>
     {
         /// <summary>
         /// Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.

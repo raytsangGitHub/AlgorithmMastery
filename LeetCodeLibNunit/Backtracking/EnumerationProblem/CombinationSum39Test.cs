@@ -1,17 +1,17 @@
-using LeetCode150Lib.Backtracking.OptimizationProblems;
+using LeetCode150Lib;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace LeetCodeLibNunit.Backtracking.OptimizationProblems
+namespace LeetCodeLibNunit.Backtracking.EnumerationProblem
 {
     public class CombinationSum39Test : TestBase
     {
-        private IBacktrackingOperation<IList<IList<int>>>? _combinationSum39;
+        private IAlgoMasteryOperation<IList<IList<int>>>? _combinationSum39;
 
         [SetUp]
         public void TestSetup()
         {
             //get the service from ServiceProvider
-            _combinationSum39 = ServiceProvider.GetService<IBacktrackingOperation<IList<IList<int>>>>();
+            _combinationSum39 = ServiceProvider.GetService<IAlgoMasteryOperation<IList<IList<int>>>>();
         }
 
         //validation testing

@@ -1,4 +1,3 @@
-using LeetCode150Lib.Backtracking.OptimizationProblems;
 using System.Text;
 
 namespace LeetCode150Lib.Backtracking.EnumerationProblems
@@ -6,7 +5,7 @@ namespace LeetCode150Lib.Backtracking.EnumerationProblems
     /// <summary>
     ///
     /// </summary>
-    public class N_Queens51 : IBacktrackingOperation<IList<IList<string>>>
+    public class N_Queens51 : IAlgoMasteryOperation<IList<IList<string>>>
     {
         public IList<IList<string>> Execute(params object[] parameters)
         {

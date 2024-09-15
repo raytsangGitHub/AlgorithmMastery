@@ -1,5 +1,3 @@
-using LeetCode150Lib.Backtracking.OptimizationProblems;
-using LeetCode150Lib.SharedPatterns.TwoPointers;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System.Reflection;
@@ -18,11 +16,11 @@ namespace LeetCode150Lib
                 //list of generic interfaces to register
                 var interfaceTypes = new[]
                 {
-                    typeof(IBacktrackingOperation<IList<string>>),
-                    typeof(IBacktrackingOperation<IList<IList<int>>>),
-                    typeof(IBacktrackingOperation<IList<IList<string>>>),
-                    typeof(ITwoPointerOperation<bool>),
-                    typeof(ITwoPointerOperation<int[]>)
+                    typeof(IAlgoMasteryOperation<IList<string>>),
+                    typeof(IAlgoMasteryOperation<IList<IList<int>>>),
+                    typeof(IAlgoMasteryOperation<IList<IList<string>>>),
+                    typeof(IAlgoMasteryOperation<bool>),
+                    typeof(IAlgoMasteryOperation<int[]>)
                 };
 
                 foreach (var interfaceType in interfaceTypes)

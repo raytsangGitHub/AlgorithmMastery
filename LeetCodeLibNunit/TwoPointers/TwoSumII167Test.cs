@@ -1,16 +1,16 @@
-using LeetCode150Lib.SharedPatterns.TwoPointers;
+using LeetCode150Lib;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace LeetCodeLibNunit.TwoPointers
 {
     public class TwoSumII167Test : TestBase
     {
-        private ITwoPointerOperation<int[]>? _twoPointerOperation;
+        private IAlgoMasteryOperation<int[]>? _twoPointerOperation;
 
         [SetUp]
         public void TestSetup()
         {
-            _twoPointerOperation = ServiceProvider.GetService<ITwoPointerOperation<int[]>>();
+            _twoPointerOperation = ServiceProvider.GetService<IAlgoMasteryOperation<int[]>>();
         }
 
         [TestCase(new int[] { 2, 7, 11, 15 }, 9, new int[] { 1, 2 })]

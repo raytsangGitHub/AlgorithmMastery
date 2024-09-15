@@ -1,16 +1,16 @@
-using LeetCode150Lib.SharedPatterns.TwoPointers;
+using LeetCode150Lib;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace LeetCodeLibNunit.TwoPointers
 {
     public class ValidPalindrome125Test : TestBase
     {
-        private ITwoPointerOperation<bool>? _validPalindrome;
+        private IAlgoMasteryOperation<bool>? _validPalindrome;
 
         [SetUp]
         public void TestSetup()
         {
-            _validPalindrome = ServiceProvider.GetService<ITwoPointerOperation<bool>>();
+            _validPalindrome = ServiceProvider.GetService<IAlgoMasteryOperation<bool>>();
         }
 
         [TestCase("A man, a plan, a canal: Panama", true)]
