@@ -17,9 +17,12 @@
     <Folder Include="BitManipulation\" />
     <Folder Include="Math\" />
     <Folder Include="DividAndConquer\" />
-    <Folder Include="SharedPatterns\OverLappingIntervals\InsertInterval\" />
-    <Folder Include="SharedPatterns\OverLappingIntervals\MergingInterval\" />
-    <Folder Include="SharedPatterns\OverLappingIntervals\IntervalIntersection\" />
+    <Folder Include="SharedOperations\Merge\Array\" />
+    <Folder Include="SharedOperations\Merge\String\" />
+    <Folder Include="SharedOperations\Reverse\" />
+    <Folder Include="SharedTechniques\OverLappingIntervals\InsertInterval\" />
+    <Folder Include="SharedTechniques\OverLappingIntervals\MergingInterval\" />
+    <Folder Include="SharedTechniques\OverLappingIntervals\IntervalIntersection\" />
     <Folder Include="Recursion\" />
     <Folder Include="Trie\" />
   </ItemGroup>

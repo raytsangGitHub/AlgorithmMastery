@@ -19,6 +19,7 @@ namespace LeetCode150Lib
                     typeof(IAlgoMasteryOperation<IList<string>>),
                     typeof(IAlgoMasteryOperation<IList<IList<int>>>),
                     typeof(IAlgoMasteryOperation<IList<IList<string>>>),
+                    typeof(IAlgoMasteryOperation<List<int>>),
                     typeof(IAlgoMasteryOperation<bool>),
                     typeof(IAlgoMasteryOperation<int[]>)
                 };
