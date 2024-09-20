@@ -17,7 +17,6 @@
     <Folder Include="BitManipulation\" />
     <Folder Include="Math\" />
     <Folder Include="DividAndConquer\" />
-    <Folder Include="SharedOperations\Merge\Array\" />
     <Folder Include="SharedOperations\Merge\String\" />
     <Folder Include="SharedOperations\Reverse\" />
     <Folder Include="SharedTechniques\OverLappingIntervals\InsertInterval\" />

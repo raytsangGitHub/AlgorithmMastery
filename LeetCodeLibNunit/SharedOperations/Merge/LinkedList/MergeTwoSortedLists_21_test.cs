@@ -3,7 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace LeetCodeLibNunit.SharedOperations.Merge.LinkedList
 {
-    public class MergeTwoSortedLists_InPlace_21_test : TestBase
+    public class MergeTwoSortedLists_21_test : TestBase
     {
         private IAlgoMasteryOperation<List<int>>? _mergeTwoListInPlace;
 

@@ -28,7 +28,6 @@
   <ItemGroup>
     <Folder Include="Backtracking\DecisionProblem\" />
     <Folder Include="Backtracking\OptimizationProblems\" />
-    <Folder Include="SharedOperations\Merge\Array\" />
     <Folder Include="SharedOperations\Merge\String\" />
   </ItemGroup>
 

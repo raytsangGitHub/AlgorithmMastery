@@ -18,27 +18,27 @@ namespace LeetCode150Lib.SharedOperations.Merge.LinkedList
     /// Merge the two lists into one sorted list.The list should be made by splicing together the nodes of the first two lists.
     /// Return the head of the merged linked list.
     /// </summary>
-    public class MergeTwoSortedLists_InPlace_21 : IAlgoMasteryOperation<List<int>>
+    public class MergeTwoSortedLists_21 : IAlgoMasteryOperation<List<int>>
     {
         private readonly LinkedList<int>? _result = new();  //store the result
 
         //the implementation will have the object[] will take in LinkedList
         public List<int> Execute(params object[] parameters)
         {
-            //both list are empty, return empty list []
+            //check either or both list are empty, return empty list []
             if (parameters[0] == null) return ((LinkedList<int>)parameters[1]).ToList();
             if (parameters[1] == null) return ((LinkedList<int>)parameters[0]).ToList();
 
-            //create a new LinkedList<int> sorted in ascending order
+            //create a new LinkedList<int> instance, and sorted in ascending order
             LinkedList<int>? list1 = new LinkedList<int>(((LinkedList<int>)parameters[0]).OrderBy(x => x));
 
             LinkedList<int>? list2 = new LinkedList<int>(((LinkedList<int>)parameters[1]).OrderBy(x => x));
 
-            //in-place implementation
-            // Merge the two sorted linked lists
+            //set the pointer to first node
             LinkedListNode<int>? node1 = list1.First;
             LinkedListNode<int>? node2 = list2.First;
 
+            // Merge the two sorted linked, using two-pointer
             while (node1 != null && node2 != null)
             {
                 if (node1.Value <= node2.Value)
