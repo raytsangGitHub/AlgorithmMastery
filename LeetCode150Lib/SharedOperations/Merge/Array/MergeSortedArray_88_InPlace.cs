@@ -9,11 +9,23 @@
         public int[] Execute(params object[] parameters)
         {
             //create the array nums1 and nums2
-            var n1 = (int[])parameters[0];
-            var nums2 = (int[])parameters[1];
+            int[]? n1 = null;
+            int[]? nums2 = null;
+            int[]? nums1 = null;
 
+            if (parameters[0] is int[])
+            {
+                n1 = (int[])parameters[0];
+            }
+            if (parameters[1] is int[])
+            {
+                nums2 = (int[])parameters[1];
+            }
             //Construct nums1 size to be n+m
-            var nums1 = new int[n1.Length + nums2.Length];
+            if (n1 != null || nums2 != null)
+            {
+                nums1 = new int[n1.Length + nums2.Length];
+            }
             // and initialize the value for array nums1
             for (var j = 0; j < n1.Length; j++)
             {
@@ -25,20 +37,23 @@
             int tp = n1.Length + nums2.Length - 1;
 
             //Since both arrays sorted. we compare backward of both array, one of the number will be the greatest and will place at the end of the in-place array.
-            while (p2 >= 0) // Ensure to loop as long as nums2 has elements
+            if (nums1 is not null && nums2 is not null)
             {
-                // If p1 true, nums1[p1] is greater than nums2[p2], put nums1[p1] at the end,  decrement p1
-                if (p1 >= 0 && nums1[p1] > nums2[p2])
+                while (p2 >= 0) // Ensure to loop as long as nums2 has elements
                 {
-                    nums1[tp] = nums1[p1];
-                    p1--;
+                    // If p1 true, nums1[p1] is greater than nums2[p2], put nums1[p1] at the end,  decrement p1
+                    if (p1 >= 0 && nums1[p1] > nums2[p2])
+                    {
+                        nums1[tp] = nums1[p1];
+                        p1--;
+                    }
+                    else
+                    {// else, put nums2[p2] at the end and decrement p2
+                        nums1[tp] = nums2[p2];
+                        p2--;
+                    }
+                    tp--; //
                 }
-                else
-                {// else, put nums2[p2] at the end and decrement p2
-                    nums1[tp] = nums2[p2];
-                    p2--;
-                }
-                tp--; //
             }
             return nums1;
         }

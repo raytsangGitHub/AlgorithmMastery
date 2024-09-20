@@ -1,4 +1,5 @@
 using LeetCode150Lib;
+using LeetCode150Lib.SharedOperations.Merge.LinkedList;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace LeetCodeLibNunit.SharedOperations.Merge.LinkedList
@@ -10,7 +11,11 @@ namespace LeetCodeLibNunit.SharedOperations.Merge.LinkedList
         [SetUp]
         public void TestSetup()
         {
-            _mergeTwoListInPlace = ServiceProvider.GetService<IAlgoMasteryOperation<List<int>>>();
+            var services = new ServiceCollection();
+            // Register your services here
+            services.AddScoped<IAlgoMasteryOperation<List<int>>, MergeTwoSortedLists_21>();
+            var serviceProvider = services.BuildServiceProvider();
+            _mergeTwoListInPlace = serviceProvider.GetRequiredService<IAlgoMasteryOperation<List<int>>>();
         }
 
         public static IEnumerable<TestCaseData> LinkedListTestData
